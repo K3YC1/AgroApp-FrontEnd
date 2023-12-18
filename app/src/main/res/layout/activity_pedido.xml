@@ -6,4 +6,178 @@
     android:layout_height="match_parent"
     tools:context=".PedidoActivity">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/gris_solido" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="567dp"
+        android:layout_height="449dp"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="-230dp"
+        android:layout_marginBottom="200dp"
+        app:cardCornerRadius="800dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="549dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo"
+            tools:ignore="ContentDescription,VisualLintBounds" />
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/salir"
+                android:layout_width="44dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="15dp"
+                android:tint="@color/white"
+                app:srcCompat="@drawable/arrow_left_solid"
+                tools:ignore="UseAppTint"/>
+
+            <ImageView
+                android:id="@+id/logo_agro"
+                android:layout_width="83dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="98dp"
+                app:srcCompat="@drawable/agroemywhitelogo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ConfirmarPedido"
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:layout_marginTop="99dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txtConfirmarPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="98dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="@string/txtConfirmarPedido"
+                android:textColor="@color/white"
+                android:textSize="26sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="490dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="#F4F4F4"
+                app:cardCornerRadius="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="410dp"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/resumen_carrito" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="410dp"
+                    android:elevation="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtTotal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/nunito_bold"
+                                android:text="@string/txtTotaltx"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="160dp"
+                                android:text="TextView"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/realizarpedido"
+                            android:layout_width="220dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="58dp"
+                            android:layout_marginTop="10dp"
+                            android:backgroundTint="@color/agro_verde"
+                            android:fontFamily="@font/nunito_bold"
+                            android:text="@string/txtRealizarPedido" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

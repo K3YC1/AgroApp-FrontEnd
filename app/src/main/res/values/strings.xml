@@ -27,4 +27,7 @@
     <string name="btnCerrarSesion">Cerrar Sesion</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txtConfirmarPedido">Confirmar Pedido</string>
+    <string name="txtRealizarPedido">Realizar Pedido</string>
+    <string name="txtTotaltx">Total:</string>
 </resources>
