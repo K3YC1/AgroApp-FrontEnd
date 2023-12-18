@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.SesionActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/gris_solido" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="700dp"
+        android:layout_height="400dp"
+        android:layout_gravity="start|top"
+        android:layout_marginTop="-100dp"
+        android:visibility="visible"
+        app:cardCornerRadius="600dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,VisualLintBounds">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="725dp"
+            android:layout_height="571dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fondo"
+            tools:ignore="ContentDescription,VisualLintBounds" />
+
+        <ImageView
+            android:id="@+id/logo_agro1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/agroemywhitelogo" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="327dp"
+        android:layout_height="475dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible"
+        app:cardCornerRadius="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:buttonTintMode="add"
+                android:checked="false"
+                android:duplicateParentState="false"
+                android:editable="false"
+                android:elegantTextHeight="false"
+                android:ellipsize="none"
+                android:enabled="true"
+                android:fontFamily="@font/nunito_bold"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textColorHint="@color/white"
+                android:textColorLink="@color/white"
+                android:textOff="@string/togleacceder"
+                android:textOn="@string/togleregistrarse"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:thumb="@drawable/thumb"
+                app:showText="true"
+                app:thumbTint="@color/agro_verde"
+                app:track="@drawable/switchfondo9"
+                app:trackTint="#00FFFFFF"
+                app:trackTintMode="screen" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/layoutOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/txtbienvenido"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/ettEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:ems="10"
+                        android:hint="@string/ptcorreo"
+                        android:inputType="textEmailAddress"
+                        tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+                    <EditText
+                        android:id="@+id/ettPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:ems="10"
+                        android:hint="@string/ptcontraseña"
+                        android:inputType="textPassword"
+                        tools:ignore="TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+                    <Button
+                        android:id="@+id/btnIniciarSesion"
+                        android:layout_width="295dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:backgroundTint="@color/agro_verde"
+                        android:backgroundTintMode="@color/agro_verde1"
+                        android:fontFamily="@font/nunito_bold"
+                        android:padding="16dp"
+                        android:text="@string/btnIniciarSesion"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/agro_verde1"
+                        android:textColorHint="@color/agro_verde1"
+                        android:textColorLink="@color/agro_verde1"
+                        android:textSize="20sp"
+                        tools:ignore="VisualLintButtonSize,DuplicateClickableBoundsCheck" />
+
+                    <TextView
+                        android:id="@+id/textViewOlvidarContraseña"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/txtrecuperar"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutOn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="30dp"
+                        android:fontFamily="@font/nunito_bold"
+                        android:text="@string/txtbienvenido"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:ems="10"
+                        android:hint="@string/etUsername"
+                        android:inputType="text" />
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:ems="10"
+                        android:hint="@string/ptcorreo"
+                        android:inputType="textEmailAddress"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:ems="10"
+                        android:hint="@string/ptcontraseña"
+                        android:inputType="textPassword"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <Button
+                        android:id="@+id/btnRegistrarse"
+                        android:layout_width="295dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="@color/agro_verde"
+                        android:fontFamily="@font/nunito_bold"
+                        android:padding="16dp"
+                        android:text="@string/btnregistrarse"
+                        android:textColor="@color/white"
+                        android:textColorHighlight="@color/agro_verde1"
+                        android:textColorHint="@color/agro_verde1"
+                        android:textColorLink="@color/agro_verde1"
+                        android:textSize="20sp"
+                        tools:ignore="VisualLintButtonSize" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

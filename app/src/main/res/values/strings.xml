@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">AgroEmy App</string>
+    <string name="btnAcceder">Acceder</string>
+    <string name="txtnotienescuenta">No tienes una cuenta?</string>
+    <string name="txtRegistrate">Registrate</string>
+    <string name="btnIniciarSesion">Iniciar Sesión</string>
+    <string name="togleacceder">Acceder</string>
+    <string name="togleregistrarse">Registrarse</string>
+    <string name="ptcorreo">Correo</string>
+    <string name="ptcontraseña">Contraseña</string>
+    <string name="txtbienvenido">Bienvenido(a) Agro Emy</string>
+    <string name="txtrecuperar">Has olvidado tu contraseña?</string>
+    <string name="btnregistrarse">Registrarse</string>
+    <string name="etUsername">Nombre de Usuario</string>
+    <string name="txtquedesea">Que desea comprar\nhoy?</string>
+    <string name="htBuscar">Buscar</string>
+    <string name="txtlistaDeseos">Lista de Deseos</string>
+    <string name="txtComprasr">Compras recientes</string>
+    <string name="txtCarrito">Carrito de Compras</string>
+    <string name="txtPagar">Pagar</string>
+    <string name="txtTotal">Todos</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="txtTituloV">Ingrese su código de verificación \n para confirmar su cuenta</string>
+    <string name="txtTituloRec">Complete los datos para cambiar \nsu contraseña</string>
+    <string name="txtTituloCorreo">Porfavor complete su correo para iniciar el \ncambio de contraseña</string>
+    <string name="btnCerrarSesion">Cerrar Sesion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

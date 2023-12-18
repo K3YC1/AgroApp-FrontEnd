@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="agro_verde">#56793D</color>
+    <color name="agro_verde1">#A1D87A</color>
+    <color name="gris_solido">#E5E5E5</color>
+    <color name="colorgrisbtn">#CCCCCC</color>
+    <color name="colorcategorias">#C4C4C4</color>
+    <color name="rojo">#FF0000</color>
+</resources>

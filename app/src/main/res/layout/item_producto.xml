@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="190dp"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView3"
+        app:layout_constraintStart_toStartOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3">
+
+        <ImageView
+            android:id="@+id/ivimagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/agroemylogocolor" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="220dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="28dp"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tvnombreproducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="98dp"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvprecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/nunito_bold"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/agro_verde"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/ivagregar"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/plus_solid"
+                    android:tint="@color/colorcategorias"
+                    tools:ignore="UseAppTint" />
+
+                <ImageView
+                    android:id="@+id/ivdeseo"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/heart_solid"
+                    android:tint="@color/colorcategorias"
+                    tools:ignore="UseAppTint" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
